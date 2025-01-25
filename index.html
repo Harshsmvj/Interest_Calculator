@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrest Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>SIMPLE INTEREST CALCULATOR</h1>
+        <form id="calc_form">
+            <label for="starting-date">Starting date</label>
+            <input id="starting-date" type="date" name="start-date" placeholder="date(DD-MM-YYYY)" required><br>
+            <label for="amount">Principle Amount</label>
+            <input id="amount" type="text" name="p_amount" placeholder="amount" required><br>
+            <label for="rate">Interest Rate(In %)</label>
+            <input id="rate" name="interest-rate" type="text" placeholder="rate of interest" required><br>
+            <button type="submit">Calculate</button>
+            <button id="reset_botton" type="reset">Reset</button>
+        </form>
+        <div class="result" id="result" style="display: none;"></div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
